@@ -26,8 +26,8 @@ Our benchmark reveals substantial performance gaps in current video generation s
 ## Demos
 <table align="center">
   <tr>
-    <td align="center"><b>Experiment 12 (Easy)</b></td>
-    <td align="center"><b>Experiment 14 (Hard)</b></td>
+    <td align="center" width="50%"><b>Experiment 12 (Easy)</b></td>
+    <td align="center" width="50%"><b>Experiment 14 (Hard)</b></td>
   </tr>
   <tr>
     <td><video src="https://github.com/user-attachments/assets/1c35250f-b965-4839-95b5-854ba53f9b23" width="100%" controls autoplay loop muted></video></td>
