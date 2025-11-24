@@ -20,7 +20,7 @@ Our benchmark reveals substantial performance gaps in current video generation s
 
 ## Overview
 <p align="center">
-  <img src="asset/pipeline.png" width="1000" height="auto">
+  <img src="asset/pipeline.png" width="1200" height="auto">
 </p>
 <p align="center"><i>Figure 1: SVBench framework overview</i></p>
 
