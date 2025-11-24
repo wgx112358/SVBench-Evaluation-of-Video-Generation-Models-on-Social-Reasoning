@@ -23,9 +23,29 @@ Our benchmark reveals substantial performance gaps in current video generation s
 <p align="center"><i></i></p>
 
 
+## Demos
+<table align="center">
+  <tr>
+    <td align="center"><b>Experiment 12 (Easy)</b></td>
+    <td align="center"><b>Experiment 14 (Hard)</b></td>
+  </tr>
+  <tr>
+    <td><video src="asset/video/EXP_012-3-easy.mp4" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="asset/video/EXP_014-7-hard.mp4" width="100%" controls autoplay loop muted></video></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Experiment 18 (Medium)</b></td>
+    <td align="center"><b>Experiment 19 (Medium)</b></td>
+  </tr>
+  <tr>
+    <td><video src="asset/video/EXP_018-2-medium.mp4" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="asset/video/EXP_019-5-medium.mp4" width="100%" controls autoplay loop muted></video></td>
+  </tr>
+</table>
+
 ## Overview
 <p align="center">
-  <img src="asset/pipeline.png" width="2000">
+  <img src="asset/pipeline.png" width="100%">
 </p>
 <p align="center"><i> SVBench framework overview</i></p>
 
