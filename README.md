@@ -18,14 +18,14 @@ While modern diffusion- and transformer-based architectures can synthesize dynam
 
 Our benchmark reveals substantial performance gaps in current video generation systems: while modern models excel in surface-level plausibility, they systematically fail in **intention recognition**, **belief reasoning**, **joint attention**, and **prosocial inference**.
 <p align="center">
-  <img src="asset/intro.png" width="1000">
+  <img src="asset/intro.png" width="600">
 </p>
 <p align="center"><i></i></p>
 
 
 ## Overview
 <p align="center">
-  <img src="asset/pipeline.png" width="1800">
+  <img src="asset/pipeline.png" width="100%">
 </p>
 <p align="center"><i> SVBench framework overview</i></p>
 
