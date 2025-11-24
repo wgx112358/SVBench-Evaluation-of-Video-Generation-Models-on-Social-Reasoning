@@ -34,8 +34,8 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td><video src="https://github.com/user-attachments/assets/4231dac5-625c-41ae-83de-f68ba7e57eec" width="100%" controls autoplay loop muted></video></td>
   </tr>
   <tr>
-    <td align="left"><b>Prompt:</b> A child is opposite a man at a table. On the table are two bowls, one red and one blue. The red bowl contains a cookie. The man raises his arm and extends his index finger toward the blue bowl.</td>
-    <td align="left"><b>Prompt:</b> ...</td>
+    <td align="left"><b>Prompt:</b> A child is opposite a woman at a table. On the table are two bowls, one red and one blue. The red bowl contains a cookie. The woman raises her arm and extends her index finger toward the blue bowl.</td>
+    <td align="left"><b>Prompt:</b> A woman and a boy are standing face-to-face, and the woman holds a toy car between them.</td>
   </tr>
   <tr>
     <td align="center"><b>Experiment 18 (Medium)</b></td>
@@ -46,8 +46,8 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td><video src="https://github.com/user-attachments/assets/d5e3e067-6a85-487f-829d-e0a4b67e9b79" width="100%" controls autoplay loop muted></video></td>
   </tr>
   <tr>
-    <td align="left"><b>Prompt:</b> ...</td>
-    <td align="left"><b>Prompt:</b> ...</td>
+    <td align="left"><b>Prompt:</b> On the floor of a room, there are red and blue rings. A boy is standing before them, appearing to hesitate about which one to choose. At this moment, a nearby woman first looks at the boy, then clearly points her finger at the red ring on the floor.</td>
+    <td align="left"><b>Prompt:</b> A man and a woman are positioned next to each other. The woman emits a loud laugh, and the man, his attention drawn by the sound, turns his head in her direction.</td>
   </tr>
 </table>
 
