@@ -34,12 +34,20 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td><video src="https://github.com/user-attachments/assets/4231dac5-625c-41ae-83de-f68ba7e57eec" width="100%" controls autoplay loop muted></video></td>
   </tr>
   <tr>
+    <td align="left"><b>Prompt:</b> A child is opposite a man at a table. On the table are two bowls, one red and one blue. The red bowl contains a cookie. The man raises his arm and extends his index finger toward the blue bowl.</td>
+    <td align="left"><b>Prompt:</b> ...</td>
+  </tr>
+  <tr>
     <td align="center"><b>Experiment 18 (Medium)</b></td>
     <td align="center"><b>Experiment 19 (Medium)</b></td>
   </tr>
   <tr>
     <td><video src="https://github.com/user-attachments/assets/efde93d8-9e21-49bd-925f-372f08a5cce8" width="100%" controls autoplay loop muted></video></td>
     <td><video src="https://github.com/user-attachments/assets/d5e3e067-6a85-487f-829d-e0a4b67e9b79" width="100%" controls autoplay loop muted></video></td>
+  </tr>
+  <tr>
+    <td align="left"><b>Prompt:</b> ...</td>
+    <td align="left"><b>Prompt:</b> ...</td>
   </tr>
 </table>
 
@@ -112,7 +120,3 @@ Our extensive evaluation across seven state-of-the-art video generation systems 
 
 These findings highlight the fundamental distinction between perceptual realism and socially coherent behavior, revealing where current generation systems succeed or fundamentally fail in generating socially intelligent video content.
 
----
-
-**Paper:** CVPR 2026 Submission #16418  
-**Title:** SVBench: Evaluation of Video Generation Models on Social Reasoning
