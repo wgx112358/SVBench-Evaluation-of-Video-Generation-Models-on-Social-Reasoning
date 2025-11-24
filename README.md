@@ -24,6 +24,7 @@ Our benchmark reveals substantial performance gaps in current video generation s
 
 
 ## Demos
+<div align="center">
 <table align="center">
   <tr>
     <td align="center" width="600"><b>Experiment 12 (Easy)</b></td>
@@ -50,6 +51,7 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td align="left"><b>Prompt:</b> A man and a woman are positioned next to each other. The woman emits a loud laugh, and the man, his attention drawn by the sound, turns his head in her direction.</td>
   </tr>
 </table>
+</div>
 
 ## Overview
 <p align="center">
