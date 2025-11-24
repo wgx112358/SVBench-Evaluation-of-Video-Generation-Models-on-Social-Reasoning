@@ -1,0 +1,347 @@
+[
+    {
+        "experiment_id": "EXP_001",
+        "experiment_name": "Sally-Anne Test (False Belief)",
+        "dimension": "D1_Mental_State_Reasoning",
+        "test_point": "Can the model represent another agent’s belief that is false relative to the current world state and use it for action prediction?",
+        "prompts": [
+            {
+                "prompt": "On a table sits an open blue shoe box containing a toy mouse, and a red bag is beside it. A woman stands near the table, looking at the setup, before leaving the room. While the woman is gone, a girl takes the toy mouse from the blue shoe box and puts it inside the red bag. The woman then returns to the table to get the toy.",
+                "difficulty": "hard",
+                "ground_truth": "The woman reaches directly for the blue shoe box and looks inside, showing a surprised or confused expression upon finding it empty."
+            },
+            {
+                "prompt": "A woman stands at a table, carefully inspecting a toy mouse that is inside an open blue shoe box. A red bag is placed next to it. After her inspection, the woman leaves the room. In her absence, a girl moves the toy mouse into the red bag. The woman returns to the room, walking confidently toward the table to pick up the toy.",
+                "difficulty": "medium",
+                "ground_truth": "The woman confidently reaches for and opens the blue shoe box, completely ignoring the red bag."
+            },
+            {
+                "prompt": "A woman at a table places a toy mouse inside a blue shoe box and closes the lid. A red bag is also on the table. The woman then leaves the room. After she is gone, a girl takes the toy mouse from the blue shoe box and hides it in the red bag. The woman then re-enters the room, intending to retrieve the toy mouse.",
+                "difficulty": "easy",
+                "ground_truth": "The woman walks directly to the blue shoe box and attempts to open it, bypassing the red bag."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_002",
+        "experiment_name": "Smarties Task (Unexpected Contents)",
+        "dimension": "D1_Mental_State_Reasoning",
+        "test_point": "Does the model predict that a naive observer relies on appearance rather than actual hidden contents?",
+        "prompts": [
+            {
+                "prompt": "A boy at a table places several pencils inside a Smarties candy box and shuts the lid. A girl enters the room, sees the Smarties box on the table, and is handed the box by the boy. The girl then opens the box.",
+                "difficulty": "hard",
+                "ground_truth": "The girl looks into the box with a surprised or confused expression, seeing the pencils instead of candy."
+            },
+            {
+                "prompt": "A boy at a table puts several pencils inside a Smarties candy box and shuts the lid. A girl, who did not see what the boy did, enters the room. The boy offers her the closed box. The girl takes the box and opens it.",
+                "difficulty": "medium",
+                "ground_truth": "The girl opens the box and shows a clear facial expression of surprise or confusion upon seeing the pencils."
+            },
+            {
+                "prompt": "A boy at a table places pencils inside a Smarties candy box and closes it. A girl enters, sees the box, licks her lips eagerly, and points at it. The boy hands her the box. The girl eagerly opens the box.",
+                "difficulty": "easy",
+                "ground_truth": "Upon opening the box and seeing pencils, the girl's eager expression changes to one of visible surprise and disappointment."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_003",
+        "experiment_name": "Level-2 Visual Perspective Taking",
+        "dimension": "D1_Mental_State_Reasoning",
+        "test_point": "Can the model infer that each observer experiences a different visual appearance due to orientation?",
+        "prompts": [
+            {
+                "prompt": "A boy and a man are on opposite sides of a chair. On the chair is a striped shirt with a large logo on its front, oriented so the logo faces the boy. A third person enters, shows a blank notepad and a pen to the MAN, and then gestures questioningly at the shirt on the chair.",
+                "difficulty": "hard",
+                "ground_truth": "The man takes the pen and notepad, and draws a simple pattern of stripes. He does not draw a logo."
+            },
+            {
+                "prompt": "A boy and a man are on opposite sides of a chair. On the chair is a striped shirt with a large logo on its front, with the logo facing the boy. The boy points excitedly at the logo, then looks at the man and points to the same spot on the shirt again with a questioning expression.",
+                "difficulty": "medium",
+                "ground_truth": "The man looks puzzled, shakes his head 'no', and then gestures to the plain, striped back of the shirt, indicating that is his only view."
+            },
+            {
+                "prompt": "A boy and a man are on opposite sides of a chair with a striped shirt on it, logo facing the boy. The boy traces the large logo with his finger. The man, looking curious about the boy's action, then walks around the chair to stand next to the boy.",
+                "difficulty": "easy",
+                "ground_truth": "Now standing next to the boy, the man looks at the front of the shirt, and his face shows a clear expression of surprise. He then nods at the boy with a look of understanding."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_004",
+        "experiment_name": "Knowledge Access (Seeing–Knowing)",
+        "dimension": "D1_Mental_State_Reasoning",
+        "test_point": "Does the model track who saw what, and attribute knowledge/ignorance accordingly?",
+        "prompts": [
+            {
+                "prompt": "A woman and a boy are in a room with a small table. On the table, a blue marble is visible under a transparent cup. The woman points to the cup, then exits the room. While she is gone, the boy lifts the cup, takes the marble and puts it into his pocket, and then hides the cup behind his back. Later, the woman returns to the room and walks towards the table to retrieve her marble.",
+                "difficulty": "hard",
+                "ground_truth": "The woman approaches the table and stops, her expression turning from confident to confused as she sees that both the cup and the marble are missing. She looks at the empty table, then turns her gaze to the boy."
+            },
+            {
+                "prompt": "A woman and a boy are in a room with a small table, where a blue marble rests under a transparent cup. The woman exits the room. The boy, waiting until he is alone, lifts the cup, takes the marble, puts it into his pocket, and leaves the cup on its side on the table. Later, the woman returns to the room and walks towards the table to get the marble.",
+                "difficulty": "medium",
+                "ground_truth": "The woman approaches the table, her pace slowing as she notices the overturned cup. She gets a puzzled expression, looks at the empty spot on the table where the marble was, and then peers at the cup."
+            },
+            {
+                "prompt": "A woman and a boy are in a room with a small table. On the table, a blue marble is visible under a transparent cup. The woman exits the room. After she departs, the boy lifts the cup, takes the marble, puts it into his pocket, and then places the empty cup back down exactly where it was. Later, the woman returns to the room and walks confidently towards the table to get the marble.",
+                "difficulty": "easy",
+                "ground_truth": "The woman reaches for the table, lifts the transparent cup, and shows a surprised expression when she sees that the marble is gone. She looks under the cup again, then around the table."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_005",
+        "experiment_name": "Intentional vs Accidental Actions",
+        "dimension": "D1_Mental_State_Reasoning",
+        "test_point": "Can the model infer intention from kinematics and context, and separate deliberate from accidental outcomes?",
+        "prompts": [
+            {
+                "prompt": "A man extends a hand with a cookie towards a woman. Unseen by the woman, a dog hiding under the table bumps the man's leg, causing his hand to jerk back suddenly. The woman, who was reaching for the cookie, looks up at the man.",
+                "difficulty": "hard",
+                "ground_truth": "The woman's face shows surprise which turns into hurt or confusion. She looks directly at the man's face for an explanation, as she did not see the dog that caused the movement."
+            },
+            {
+                "prompt": "A man is extending his hand, holding a cookie, towards a woman sitting across a small cafe table. A fast-moving waiter brushes past the man's chair, causing the man to jolt in surprise. The man's hand jerks back, pulling the cookie away. The woman, who was about to take it, observes this.",
+                "difficulty": "medium",
+                "ground_truth": "The woman's reaching hand stops mid-air. Her expression changes from anticipation to surprise. She glances briefly at the departing waiter and then looks back at the man with an understanding smile."
+            },
+            {
+                "prompt": "In a sunny park, a man kneels and offers a cookie to a small child. A large, boisterous dog runs directly into the man, causing him to visibly stumble sideways. As he stumbles, his hand holding the cookie jerks away. The child watches the entire event unfold.",
+                "difficulty": "easy",
+                "ground_truth": "The child, initially reaching for the cookie, looks surprised. Their gaze shifts from the cookie to the large dog, and then back to the man with a look of understanding or concern, not anger."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_006",
+        "experiment_name": "Means–End Problem Solving (Köhler’s Stick Task)",
+        "dimension": "D2_Goal_Directed_Action",
+        "test_point": "Does the model choose and deploy an appropriate means to realize the end state?",
+        "prompts": [
+            {
+                "prompt": "In a brightly lit room, a young girl stands before a tall wooden shelf with a colorful toy on its highest level. A sturdy chair is positioned a few feet away. The girl stretches her arm upward toward the toy, her fingers falling short. She then turns her head to look directly at the chair, and begins to walk towards it.",
+                "difficulty": "hard",
+                "ground_truth": "The girl pushes the chair to the base of the shelf, climbs onto the chair, and successfully retrieves the toy."
+            },
+            {
+                "prompt": "In a brightly lit room, a young girl stands before a tall wooden shelf with a colorful toy on its highest level. A sturdy chair is positioned a few feet away. The girl stretches her arm upward toward the toy, her fingers falling short. She drops her arm with a sigh, showing mild frustration, then her attention shifts as she turns her head to look at the chair and begins to walk towards it.",
+                "difficulty": "medium",
+                "ground_truth": "The girl pushes the chair to the base of the shelf, climbs onto the chair, and successfully retrieves the toy."
+            },
+            {
+                "prompt": "In a brightly lit room, a young girl stands before a tall wooden shelf with a colorful toy on its highest level. A sturdy chair is positioned a few feet away. The girl stretches her arm upward toward the toy, her fingers falling short. She then turns her head to look at the chair, then glances back up at the toy with a look of realization, and immediately begins to walk towards the chair.",
+                "difficulty": "easy",
+                "ground_truth": "The girl pushes the chair to the base of the shelf, climbs onto the chair, and successfully retrieves the toy."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_007",
+        "experiment_name": "Rational Imitation (Gergely’s Head-Touch)",
+        "dimension": "D2_Goal_Directed_Action",
+        "test_point": "Does the model modulate imitation by contextual necessity vs ritual copying?",
+        "prompts": [
+            {
+                "prompt": "A woman and a child are in a brightly lit room. On a low table is a toy with a single large, glowing button. The woman stands near the table, her hands visibly empty and held at her sides. While the child watches, the woman leans down and deliberately presses the glowing button with her forehead. The button makes a sound. The woman then straightens up and steps away from the table. The child now walks towards the toy.",
+                "difficulty": "hard",
+                "ground_truth": "The child reaches the table and presses the glowing button with their hand."
+            },
+            {
+                "prompt": "A woman and a child are in a brightly lit room. On a low table is a toy with a single large, glowing button. The woman stands with her hands empty. She looks intently at the button, then makes eye contact with the watching child and nods towards the button. Then, she leans down and presses the glowing button with her forehead. After the button makes a sound, the woman straightens up and gestures towards the toy, indicating it is the child's turn.",
+                "difficulty": "medium",
+                "ground_truth": "The child approaches the toy and uses their hand to press the glowing button."
+            },
+            {
+                "prompt": "A woman and a child are in a brightly lit room. On a low table is a toy with a single large, glowing button. The woman's hands are unoccupied. She first points very clearly with her index finger right at the glowing button, holding the pose for a moment while looking at the child. Then, as a separate action, she leans down and presses the button with her forehead. The button makes a sound. The woman then steps back, looking expectantly at the child.",
+                "difficulty": "easy",
+                "ground_truth": "The child walks to the toy and presses the glowing button with their index finger."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_008",
+        "experiment_name": "Failed Attempts (Meltzoff)",
+        "dimension": "D2_Goal_Directed_Action",
+        "test_point": "Can the model reconstruct the latent goal from near-miss kinematics?",
+        "prompts": [
+            {
+                "prompt": "A woman stands on her tiptoes, struggling to place a toy duck on a high shelf. The duck slips from her fingers and falls to the floor. A child, who was watching from nearby, walks over, picks up the duck, and turns to look up at the empty spot on the shelf.",
+                "difficulty": "hard",
+                "ground_truth": "The child reaches up and successfully places the toy duck on the high shelf."
+            },
+            {
+                "prompt": "A woman tries to place a toy duck on a high shelf, but it tumbles to the floor. A child, who has been intently watching the woman's entire effort, immediately walks over and picks up the duck. The child then looks from the duck in their hand to the high shelf above.",
+                "difficulty": "medium",
+                "ground_truth": "The child reaches up and successfully places the toy duck on the high shelf."
+            },
+            {
+                "prompt": "A woman unsuccessfully tries to place a toy duck on a high shelf; it falls to the floor. The woman sighs, then looks at a nearby child and explicitly points from the duck on the floor to the high shelf. The child follows her gesture, picks up the duck, and walks directly towards the shelf.",
+                "difficulty": "easy",
+                "ground_truth": "The child reaches up and successfully places the toy duck on the high shelf."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_013",
+        "experiment_name": "Level-1 Visual Perspective Taking",
+        "dimension": "D3_Joint_Attention_and_Perspective",
+        "test_point": "Can the model infer visibility states given bodies, barriers, and viewpoints?",
+        "prompts": [
+            {
+                "prompt": "A tall, opaque screen divides a room. On one side, a woman places a red toy car on the floor. On the opposite side, a man stands facing the screen. The woman then gestures towards the toy car's location behind the screen and looks at the man, as if asking him to retrieve it.",
+                "difficulty": "hard",
+                "ground_truth": "The man looks confused, shrugs his shoulders, and does not move toward the toy car's location."
+            },
+            {
+                "prompt": "A tall, opaque screen divides a room. On one side, a woman places a red toy car on the floor. On the opposite side, a man stands facing the screen with a curious expression. The woman then gestures towards the toy car's location behind the screen and looks at the man expectantly.",
+                "difficulty": "medium",
+                "ground_truth": "The man looks confused, then begins to walk around the edge of the screen to see what is on the other side."
+            },
+            {
+                "prompt": "A tall, opaque screen divides a room. On one side, a woman places a red toy car on the floor. On the opposite side, a man cranes his neck, unsuccessfully trying to see over it. The woman then gestures towards the toy car's location and looks at the man, as if asking him to retrieve it.",
+                "difficulty": "easy",
+                "ground_truth": "The man, having failed to see over the screen, looks back at the woman and shakes his head with a helpless gesture."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_015",
+        "experiment_name": "Collaborative Transport",
+        "dimension": "D4_Social_Coordination",
+        "test_point": "Can the model realize interdependent roles and synchronized motions toward a shared goal?",
+        "prompts": [
+            {
+                "prompt": "A man and woman are carrying a long crate between them. They awkwardly pause as they reach a narrow, closed doorway, unable to open it because their hands are full. A child standing beside the door sees them struggle, then points a finger directly at the door's handle. The man and woman stop and look expectantly at the child.",
+                "difficulty": "hard",
+                "ground_truth": "The child turns the handle and pushes the door open. The man and woman then carefully maneuver the crate through the open doorway."
+            },
+            {
+                "prompt": "A man and woman are carrying a long crate between them, moving toward a narrow, closed doorway. As they get closer, they slow down, their hands full. They both notice a child standing beside the door pointing at the handle. One of the adults gives a slight, encouraging nod towards the child.",
+                "difficulty": "medium",
+                "ground_truth": "The child responds to the nod by turning the handle and opening the door, allowing the man and woman to carry the crate through."
+            },
+            {
+                "prompt": "A man and woman are carrying a long crate between them. As they approach a narrow, closed doorway, they pause, their hands occupied. A child standing beside the door points at the handle, then successfully turns the handle and pushes the door wide open, holding it for them.",
+                "difficulty": "easy",
+                "ground_truth": "The man and woman immediately walk forward and begin to carefully maneuver the long crate through the now-open doorway."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_017",
+        "experiment_name": "Collision Avoidance in Pedestrian Flow",
+        "dimension": "D4_Social_Coordination",
+        "test_point": "Can the model anticipate others’ paths and adapt speed/heading to avoid collisions?",
+        "prompts": [
+            {
+                "prompt": "From a fixed street-level perspective, a man and a woman with a stroller are approaching one another on a narrow sidewalk. A soccer ball emerges from a side doorway, followed immediately by a small child chasing it. The child runs directly into the path between the two adults, forcing them to react.",
+                "difficulty": "hard",
+                "ground_truth": "The man and the woman both stop abruptly. The man puts out a hand to shield the child, while the woman quickly pulls her stroller back. They successfully avoid colliding with each other or the child."
+            },
+            {
+                "prompt": "On a narrow sidewalk, a man and a woman with a stroller are walking toward each other. A soccer ball rolls out from a doorway, and both pedestrians shift their gaze toward the doorway. A moment later, a small child runs out of the doorway, chasing the ball into their path.",
+                "difficulty": "medium",
+                "ground_truth": "Having already directed their attention to the doorway, the man and woman react quickly. The man takes a decisive step to his right, while the woman simultaneously stops her stroller and pulls it slightly to her left, creating a safe channel for the child."
+            },
+            {
+                "prompt": "A man and a woman pushing a stroller walk toward each other on a narrow sidewalk. A soccer ball rolls from a doorway, followed by a small child chasing it. The man, seeing the child, immediately puts a hand out in a 'stop' gesture towards the woman and prepares to move.",
+                "difficulty": "easy",
+                "ground_truth": "The woman sees the man's gesture and the child, and she immediately stops her stroller. In response to her stopping, the man steps sideways to position himself between the woman and the oncoming child, preventing a collision."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_026",
+        "experiment_name": "Competitive Resource Allocation",
+        "dimension": "D7_Multi_Dimensional_Integration",
+        "test_point": "Can the model represent competing claims and produce fair/strategic allocations?",
+        "prompts": [
+            {
+                "prompt": "A woman pushes a plate across a table to a man. The plate contains two cake slices, one noticeably larger than the other. The man looks at the two slices and then begins to reach his hand toward the plate.",
+                "difficulty": "hard",
+                "ground_truth": "The man's hand moves directly towards and picks up the larger slice of cake."
+            },
+            {
+                "prompt": "A woman pushes a plate across a table to a man. The plate contains two cake slices of different sizes. The man looks down, his eyes darting back and forth between the two slices as if comparing them, and then he starts to reach his hand out over the plate.",
+                "difficulty": "medium",
+                "ground_truth": "The man's hand bypasses the smaller slice and decisively picks up the larger slice of cake."
+            },
+            {
+                "prompt": "A woman slides a plate with two uneven cake slices to a man. The man looks at both slices, then his gaze locks onto the larger slice for a moment. He then begins to reach his hand toward the plate, aiming in the direction of the larger slice.",
+                "difficulty": "easy",
+                "ground_truth": "The man's hand continues its trajectory, moving past the small slice, and picks up the larger slice of cake."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_027",
+        "experiment_name": "Strategic Deception & Machiavellian Reasoning (Cooperative Settings)",
+        "dimension": "D7_Multi_Dimensional_Integration",
+        "test_point": "Does the model infer when a partner’s signals are self-serving and adjust strategy accordingly?",
+        "prompts": [
+            {
+                "prompt": "On a table sit a cup and a red box. A man carefully places a small sticker under the cup. A woman standing next to him observes this, then urgently taps the top of the red box to get his attention. The man looks from her gesture back to the table, and then acts.",
+                "difficulty": "hard",
+                "ground_truth": "The man lifts the cup he just placed, revealing the sticker, ignoring the red box the woman indicated."
+            },
+            {
+                "prompt": "On a table sit a cup and a red box. A man, with his eyes intently focused, places a small sticker under the cup. A woman next to him tries to get his attention by pointing insistently at the red box. The man briefly glances at her pointing finger, then immediately turns his focus back to the objects on the table to make his choice.",
+                "difficulty": "medium",
+                "ground_truth": "The man lifts the cup where he placed the sticker, completely ignoring the red box the woman pointed to."
+            },
+            {
+                "prompt": "On a table sit a cup and a red box. A man places a sticker under the cup and keeps his hand resting protectively on top of the cup. A woman next to him points emphatically at the red box. The man looks at her pointing finger, then looks back down at the table and acts decisively.",
+                "difficulty": "easy",
+                "ground_truth": "Without hesitation, the man lifts the cup that his hand was resting on, ignoring the red box."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_029",
+        "experiment_name": "Norm Violation Response",
+        "dimension": "D7_Multi_Dimensional_Integration",
+        "test_point": "Can the model classify a behavior as a violation and choose graded responses?",
+        "prompts": [
+            {
+                "prompt": "A woman places a mug emitting steam onto a coffee table and then briefly turns away. A young boy sitting next to the table picks up the mug and starts to lift it toward his mouth. The woman turns back, her gaze falling on the boy and the mug.",
+                "difficulty": "hard",
+                "ground_truth": "The woman's expression changes to one of alarm, and she quickly reaches over and takes the mug from the boy's hands."
+            },
+            {
+                "prompt": "A woman places a steaming mug on a coffee table next to a boy. As the boy lifts the mug toward his mouth, the woman's attention snaps back toward him with a concerned expression.",
+                "difficulty": "medium",
+                "ground_truth": "The woman immediately reaches out and intercepts the mug, moving it safely away from the boy before he can drink."
+            },
+            {
+                "prompt": "A woman places a steaming mug on a coffee table next to a boy. When the boy lifts the mug toward his mouth, the woman's eyes widen in alarm and she immediately begins to reach out toward the mug.",
+                "difficulty": "easy",
+                "ground_truth": "The woman's hand connects with the mug, firmly but gently pulling it from the boy's grasp and placing it back on the table."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_030",
+        "experiment_name": "Multi-Party Collaborative Problem Solving with Asymmetric Information",
+        "dimension": "D7_Multi_Dimensional_Integration",
+        "test_point": "Does the model reason about knowledge distribution and orchestrate efficient information sharing?",
+        "prompts": [
+            {
+                "prompt": "A woman places a key on a table and covers it with an upside-down red cup while a man in the background is distracted by his phone. The man then looks up from his phone. The woman catches his eye, briefly glances at the red cup, and then looks back at the man expectantly.",
+                "difficulty": "hard",
+                "ground_truth": "The man walks over to the table, lifts the red cup, and picks up the key."
+            },
+            {
+                "prompt": "A woman places a key on a table and covers it with an upside-down red cup while a man in the background is distracted by his phone. The man then looks up from his phone. The woman makes eye contact with him and points a single, deliberate finger at the red cup on the table.",
+                "difficulty": "medium",
+                "ground_truth": "The man walks over to the table, lifts the red cup, and picks up the key."
+            },
+            {
+                "prompt": "A woman places a key on a table and covers it with an upside-down red cup while a man in the background is distracted by his phone. The man then looks up from his phone. The woman walks over to the table, taps the top of the red cup twice with her finger, then looks directly at the man and nods towards the cup.",
+                "difficulty": "easy",
+                "ground_truth": "The man walks over to the table, lifts the red cup, and picks up the key."
+            }
+        ]
+    }
+]

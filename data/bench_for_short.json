@@ -1,0 +1,926 @@
+[
+    {
+        "experiment_id": "EXP_021",
+        "experiment_name": "Empathic Concern (Comforting)",
+        "dimension": "D5_Emotion_and_Prosocial_Behavior",
+        "test_point": "Can the model detect distress and generate context-appropriate comforting responses?",
+        "prompts": [
+            {
+                "prompt": "A little girl is crying over a dropped ice cream. A woman kneels down in front of her and opens her arms.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will hug or verbally comfort the girl.",
+                "question": "What will the woman do next?"
+            },
+            {
+                "prompt": "A little girl is crying next to her dropped ice cream. A woman nearby turns to look directly at the crying girl.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will approach and comfort the girl.",
+                "question": "What is the woman likely to do?"
+            },
+            {
+                "prompt": "A girl is crying on a park bench. A dropped ice cream cone is on the ground nearby. A woman is sitting on the other end of the bench.",
+                "difficulty": "hard",
+                "ground_truth": "The woman will notice the crying girl and offer comfort.",
+                "question": "Describe the most likely interaction between the woman and the girl."
+            },
+            {
+                "prompt": "A boy sits on the ground crying and holding his scraped knee. A man kneels and gently touches the boy's shoulder.",
+                "difficulty": "easy",
+                "ground_truth": "The man will comfort the boy, possibly by checking his knee or hugging him.",
+                "question": "What is the man's next action?"
+            },
+            {
+                "prompt": "A boy falls off his scooter, then sits up and starts crying while holding his knee. A man walking nearby stops to look at him.",
+                "difficulty": "medium",
+                "ground_truth": "The man will approach the boy to check on him and offer comfort.",
+                "question": "What will the man likely do?"
+            },
+            {
+                "prompt": "A boy is on the ground crying, with a scooter lying next to him. A man is standing nearby.",
+                "difficulty": "hard",
+                "ground_truth": "The man will infer the boy is hurt and will go over to comfort him.",
+                "question": "Predict the man's next action."
+            },
+            {
+                "prompt": "A girl is crying while holding a teddy bear with a ripped arm. A woman sits beside her and gestures toward the bear with a concerned look.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will comfort the girl and likely offer to fix the bear.",
+                "question": "What will the woman do for the girl?"
+            },
+            {
+                "prompt": "A girl begins to cry as she looks at her teddy bear's ripped arm. A woman sitting next to her looks from the girl's face to the bear.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will comfort the girl about her broken toy.",
+                "question": "How is the woman likely to respond?"
+            },
+            {
+                "prompt": "A girl is crying on a chair. On her lap is a teddy bear with one arm torn off. A woman is in the room with her.",
+                "difficulty": "hard",
+                "ground_truth": "The woman will notice the girl's distress and approach to comfort her.",
+                "question": "What is the most probable interaction that will happen next?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_020",
+        "experiment_name": "Instrumental Helping (Warneken & Tomasello)",
+        "dimension": "D5_Emotion_and_Prosocial_Behavior",
+        "test_point": "Does the model trigger helping when it infers a blocked goal?",
+        "prompts": [
+            {
+                "prompt": "A woman reaches for a pen under a table but cannot grasp it. She then looks at a nearby boy and points to the pen.",
+                "difficulty": "easy",
+                "ground_truth": "The boy will retrieve the pen and give it to the woman.",
+                "question": "What will the boy do next?"
+            },
+            {
+                "prompt": "A woman repeatedly reaches for a pen under a table, but her hand does not reach it. A boy is standing nearby, watching.",
+                "difficulty": "medium",
+                "ground_truth": "The boy will get the pen for the woman.",
+                "question": "What is the boy likely to do?"
+            },
+            {
+                "prompt": "A woman's arm is outstretched toward a pen under a table. A boy is standing nearby.",
+                "difficulty": "hard",
+                "ground_truth": "The boy will infer the woman's goal and help her get the pen.",
+                "question": "Based on the scene, what will the boy likely do next?"
+            },
+            {
+                "prompt": "A man holding a stack of books bumps a closed cabinet door with his elbow, then looks at a nearby woman.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will open the cabinet door for him.",
+                "question": "What will the woman most likely do next?"
+            },
+            {
+                "prompt": "A man holding a stack of books stands in front of a closed cabinet door. A woman is nearby.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will infer he cannot open the door and will open it for him.",
+                "question": "What is the woman likely to do?"
+            },
+            {
+                "prompt": "A man is holding books. In front of him is a closed cabinet. A woman is standing near him.",
+                "difficulty": "hard",
+                "ground_truth": "The woman will infer his intention to put the books away and will open the door.",
+                "question": "Describe the most probable interaction to happen next."
+            },
+            {
+                "prompt": "An adult drops a clothespin and fails to pick it up. He looks at a nearby toddler and points to the clothespin.",
+                "difficulty": "easy",
+                "ground_truth": "The toddler will pick up the clothespin and hand it to the adult.",
+                "question": "What will the toddler do next?"
+            },
+            {
+                "prompt": "An adult reaches for a clothespin on the floor but his hand stops short. A toddler is sitting nearby, watching the clothespin.",
+                "difficulty": "medium",
+                "ground_truth": "The toddler will pick up the clothespin and give it to the adult.",
+                "question": "What is the toddler likely to do with the clothespin?"
+            },
+            {
+                "prompt": "An adult's arm is stretched out toward a clothespin on the floor. A toddler is nearby.",
+                "difficulty": "hard",
+                "ground_truth": "The toddler will infer the adult's goal and hand him the clothespin.",
+                "question": "Predict the toddler's next action."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_023",
+        "experiment_name": "Proxemics (Personal Space)",
+        "dimension": "D6_Social_Norms_and_Spacing",
+        "test_point": "Does the model maintain appropriate distances across settings and relationships?",
+        "prompts": [
+            {
+                "prompt": "A woman sits on a park bench. A man sits right next to her, though the bench is empty. The woman pointedly turns her head to look at the open space at the far end of the bench.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will move to the other end of the bench to create more space.",
+                "question": "What will the woman most likely do next?"
+            },
+            {
+                "prompt": "A woman is sitting on an empty park bench. A man sits down right next to her. She gets a tense, uncomfortable feeling.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will shift away from the man to increase her personal space.",
+                "question": "What is the woman's most likely next action?"
+            },
+            {
+                "prompt": "A woman sits at one end of a long, empty park bench. A man sits down right next to her.",
+                "difficulty": "hard",
+                "ground_truth": "The woman will move further away to restore a comfortable personal distance.",
+                "question": "Predict the woman's next action."
+            },
+            {
+                "prompt": "A man is standing at a bus stop. A woman comes and stands directly behind him, very close. The man makes a quick, uncomfortable glance over his shoulder at her before facing forward again.",
+                "difficulty": "easy",
+                "ground_truth": "The man will move to create more personal space between himself and the woman.",
+                "question": "How does the man react to the woman's proximity?"
+            },
+            {
+                "prompt": "A man is standing at an otherwise empty bus stop. A woman comes and stands directly behind him, very close.",
+                "difficulty": "medium",
+                "ground_truth": "The man will move to create more personal space between himself and the woman.",
+                "question": "How does the man react to the woman's proximity?"
+            },
+            {
+                "prompt": "A man is standing at a bus stop. A woman comes and stands directly behind him, very close.",
+                "difficulty": "hard",
+                "ground_truth": "The man will move to create more personal space between himself and the woman.",
+                "question": "How does the man react to the woman's proximity?"
+            },
+            {
+                "prompt": "A man and a woman are alone in a large elevator, standing right next to each other. The woman shifts her weight and turns her body slightly toward an empty corner.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will move to the empty corner of the elevator.",
+                "question": "What will the woman do next?"
+            },
+            {
+                "prompt": "A man and a woman are alone in a large elevator. The man is standing right next to her. The woman briefly glances at the man with a slight frown.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will move to a different part of the elevator to create distance.",
+                "question": "How will the woman likely change her position?"
+            },
+            {
+                "prompt": "A man and a woman are the only two people in a large, spacious elevator. The man is standing right next to the woman.",
+                "difficulty": "hard",
+                "ground_truth": "One of the individuals will move to another part of the elevator to increase their distance.",
+                "question": "Describe the most likely change in the scene."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_022",
+        "experiment_name": "Costly Helping",
+        "dimension": "D5_Emotion_and_Prosocial_Behavior",
+        "test_point": "Will the model produce helping that trades off personal cost for others’ benefit?",
+        "prompts": [
+            {
+                "prompt": "At the edge of a mud puddle, so expansive that one must step into it to retrieve anything from the middle, a child is unable to retrieve his toy.The boy is wearing clean cloth shoes, but the man is wearing clean but waterproof shoes. The boy looks at a man in clean shoes, also standing at the edge, and points at the toy.",
+                "difficulty": "easy",
+                "ground_truth": "The man will step into the mud to retrieve the toy, getting his shoes dirty.",
+                "question": "What will the man do about the toy?"
+            },
+            {
+                "prompt": "A child at the edge of an expansive mud puddle reaches for his toy, but cannot retrieve it because the puddle is so large it requires stepping in. The boy is wearing clean cloth shoes, but the man is wearing clean but waterproof shoes.The man standing nearby at the edge, stops and looks from his shoes to the toy.",
+                "difficulty": "medium",
+                "ground_truth": "The man will retrieve the toy, accepting that his shoes will get muddy.",
+                "question": "What is the man likely to do?"
+            },
+            {
+                "prompt": "A child and a man wearing clean shoes are standing together at the edge of an expansive mud puddle. The child is looking at his toy, which he cannot retrieve from the puddle, as it is too large to reach across without stepping in.The boy is wearing clean cloth shoes, but the man is wearing clean but waterproof shoes.",
+                "difficulty": "hard",
+                "ground_truth": "The man will infer the child's distress and help get the toy, despite the cost of getting his shoes dirty.",
+                "question": "Predict the man's next action."
+            },
+            {
+                "prompt": "In heavy rain, a shivering child without a coat looks at a woman holding an umbrella. The woman looks back at the child.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will share or give her umbrella to the child, getting herself wet.",
+                "question": "What will the woman do with her umbrella?"
+            },
+            {
+                "prompt": "It is raining hard. A woman under an umbrella sees a soaked child shivering nearby.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will help the child get out of the rain, likely by sharing her umbrella.",
+                "question": "How is the woman likely to help the child?"
+            },
+            {
+                "prompt": "It is raining. A woman stands under an umbrella. A soaked child is standing a few feet away.",
+                "difficulty": "hard",
+                "ground_truth": "The woman will offer the child cover with her umbrella, accepting she will get wet.",
+                "question": "Describe the most likely interaction to happen next."
+            },
+            {
+                "prompt": "A woman drops her bag, and papers scatter on the sidewalk. She looks at a man who is eating an ice cream cone.The man walking by, eating an ice cream cone, stops and watches the papers.",
+                "difficulty": "easy",
+                "ground_truth": "The man will put down or abandon his ice cream to help her pick up the papers.",
+                "question": "What will the man do next?"
+            },
+            {
+                "prompt": "Papers scatter from a woman's dropped bag. A man walking by, eating an ice cream cone, stops and watches the papers.",
+                "difficulty": "medium",
+                "ground_truth": "The man will decide to help the woman, sacrificing his snack.",
+                "question": "What is the man likely to do?"
+            },
+            {
+                "prompt": "A woman is on her knees picking up scattered papers from a dropped bag. A man holding an ice cream cone is nearby.",
+                "difficulty": "hard",
+                "ground_truth": "The man will help the woman pick up her papers, forgoing his ice cream.",
+                "question": "Predict the man's next action."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_025",
+        "experiment_name": "Dominance Display (Posture/Space)",
+        "dimension": "D6_Social_Norms_and_Spacing",
+        "test_point": "Does the model interpret/display dominance vs submission cues appropriately?",
+        "prompts": [
+            {
+                "prompt": "In a narrow hallway, a a menacing-looking man stands with his feet spread and hands on his hips, completely blocking the path. A woman approaches, and upon seeing him, she immediately lowers her head and pulls her shoulders in.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will turn her body sideways to squeeze past him, showing deference.",
+                "question": "How will the woman get past the man in the hallway?"
+            },
+            {
+                "prompt": "In a narrow hallway, a a menacing-looking man stands in the middle with an expansive posture (feet apart). A woman approaches, stops in front of him, and looks up at him.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will be the one to yield, either by waiting for the man to move or by actively turning sideways to pass him.",
+                "question": "What is most likely to happen next?"
+            },
+            {
+                "prompt": "In the middle of a narrow hallway, a menacing-looking man stands with his feet apart. Another woman is at the other end of the hallway.",
+                "difficulty": "hard",
+                "ground_truth": "As the woman approaches to pass, she will adopt a submissive posture (like turning sideways) while the man maintains his space-occupying stance.",
+                "question": "Describe the body language of both people as the woman passes the man."
+            },
+            {
+                "prompt": "A menacing-looking man is sprawled out with his limbs spread wide, occupying an entire park bench. A woman approaches the bench, and after seeing him, she gets a hesitant expression and begins looking at other places in the park.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will give up on sitting on this bench and will look for another seat.",
+                "question": "Will the woman sit on this bench?"
+            },
+            {
+                "prompt": "A menacing-looking man is taking up most of a park bench by stretching out his arms and legs. A woman walks up to the bench and stares at the small amount of space that is left.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will most likely choose not to sit there and will either remain standing or walk away.",
+                "question": "What is the woman most likely to do next?"
+            },
+            {
+                "prompt": "In the middle of a park bench, a menacing-looking man sits with his arms spread wide along the backrest. A woman is standing near the bench.",
+                "difficulty": "hard",
+                "ground_truth": "The woman will likely not sit down due to the man's dominant posture, or she will sit cautiously on the very edge.",
+                "question": "Predict the woman's next action."
+            },
+            {
+                "prompt": "A manager leans forward over a seated employee's desk with their hands planted firmly on it. The employee, in turn, leans back in their chair and pulls their arms in close to their body.",
+                "difficulty": "easy",
+                "ground_truth": "The employee's posture is a classic submissive response to the manager's dominant posture.",
+                "question": "What signal is the employee's body language sending?"
+            },
+            {
+                "prompt": "A manager stands with their hands on their hips next to a seated employee's desk. The employee stops working and looks up at the manager.",
+                "difficulty": "medium",
+                "ground_truth": "The employee will show deference, possibly by avoiding a prolonged stare and waiting for the manager to speak.",
+                "question": "How is the employee likely to behave next?"
+            },
+            {
+                "prompt": "A manager is standing next to a seated employee with an expansive posture (hands on hips).",
+                "difficulty": "hard",
+                "ground_truth": "The scene depicts a power imbalance, where the manager's posture is dominant and the employee's position is subordinate.",
+                "question": "Describe the social dynamic between these two individuals."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_028",
+        "experiment_name": "Helping Based on Visual Perspective",
+        "dimension": "D7_Multi_Dimensional_Integration",
+        "test_point": "Will the model tailor help to the recipient’s viewpoint (e.g., pointing vs handing)?",
+        "prompts": [
+            {
+                "prompt": "A table is divided by an opaque screen. A child on one side cannot see a toy on the other side, so they reach over the screen blindly and ask, 'Toy?'. An adult on the other side can see the toy.",
+                "difficulty": "easy",
+                "ground_truth": "The adult will pick up the toy and hand it over the screen to the child.",
+                "question": "How will the adult help the child get the toy?"
+            },
+            {
+                "prompt": "An opaque screen stands in the middle of a table. A child on one side is reaching and fumbling, trying to find a toy on the other side. An adult, who can see the toy, is opposite them.",
+                "difficulty": "medium",
+                "ground_truth": "The adult will hand the toy to the child, knowing the child cannot see it.",
+                "question": "What is the most effective way for the adult to help?"
+            },
+            {
+                "prompt": "A child and an adult are separated by an opaque screen on a table. A toy is on the adult's side.",
+                "difficulty": "hard",
+                "ground_truth": "If the child wants the toy, the adult needs to 'hand' it to them, not 'point' to it.",
+                "question": "If the adult offers help, predict which method they will use: handing or pointing."
+            },
+            {
+                "prompt": "A toy is at the far end of a wide table, in full view of a child but out of their reach. The child strains their arm toward it and grunts in frustration. An adult is sitting right next to the toy.",
+                "difficulty": "easy",
+                "ground_truth": "The adult will push the toy across the table toward the child so they can reach it.",
+                "question": "What will the adult do to help the child?"
+            },
+            {
+                "prompt": "On a very wide table, a toy rests in the middle. A child is looking at it and reaching for it in vain. An adult is sitting at the other end of the table, close to the toy.",
+                "difficulty": "medium",
+                "ground_truth": "The adult will push the toy into the child's reach, or possibly point to it.",
+                "question": "How is the adult likely to help the child?"
+            },
+            {
+                "prompt": "A child is on one side of a table. A toy is in the center of the table, beyond their reach. An adult is on the other side of the table.",
+                "difficulty": "hard",
+                "ground_truth": "The most natural way for the adult to help is to push the toy closer, as the child is already aware of the toy's location.",
+                "question": "Describe the most likely helping behavior from the adult."
+            },
+            {
+                "prompt": "A toy has fallen into a deep, opaque bucket. An adult can see the toy by looking down from above, but a small child standing next to the bucket is too short to see inside. The child is patting the side of the bucket anxiously.",
+                "difficulty": "easy",
+                "ground_truth": "The adult will reach into the bucket, retrieve the toy, and hand it to the child.",
+                "question": "How will the adult get the toy to the child?"
+            },
+            {
+                "prompt": "A child is sitting on the floor with their back to a shelf. They are unaware that their favorite toy car is on the shelf. An adult standing by the shelf picks up the toy car.",
+                "difficulty": "medium",
+                "ground_truth": "The adult will hand the toy car to the child, since the child is unaware of its presence.",
+                "question": "What will the adult do with the toy car next?"
+            },
+            {
+                "prompt": "An adult and a child. A toy. The toy is in a opaque box. The child cannot get the toy out by themself.",
+                "difficulty": "hard",
+                "ground_truth": "The adult will retrieve the toy and hand it to the child.",
+                "question": "Describe the adult's  behavior."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_024",
+        "experiment_name": "Queue Behavior",
+        "dimension": "D6_Social_Norms_and_Spacing",
+        "test_point": "Can the model produce and respect queuing conventions and reactions to violations?",
+        "prompts": [
+            {
+                "prompt": "A woman is next in line at a coffee counter. A man walks up and stands in front of her. She immediately taps his shoulder and points to the spot behind her.",
+                "difficulty": "easy",
+                "ground_truth": "The man will apologize and move to the end of the line.",
+                "question": "Where will the man go next?"
+            },
+            {
+                "prompt": "A woman is next in line at a coffee counter. A man walks up and stands in front of her, and she stares at the back of his head with a frown.",
+                "difficulty": "medium",
+                "ground_truth": "The woman will verbally correct the man, telling him to go to the back of the line.",
+                "question": "What is the woman likely to do?"
+            },
+            {
+                "prompt": "A woman is waiting at the front of a line at a coffee counter. A man walks up and stands in front of her.",
+                "difficulty": "hard",
+                "ground_truth": "The woman or another person will inform the man he has cut the line.",
+                "question": "Predict the most likely social interaction to happen next."
+            },
+            {
+                "prompt": "Three people are in a line at a bus stop. A fourth person arrives and stands at the very front. The person they cut off feels a surge of indignation and thinks, 'He needs to go to the back.'",
+                "difficulty": "easy",
+                "ground_truth": "The person who was cut off will tell the newcomer to go to the end of the line.",
+                "question": "What will the person who was cut off do?"
+            },
+            {
+                "prompt": "Three people are in a line at a bus stop. A fourth person arrives and stands at the very front. The person they cut off sighs loudly and crosses their arms.",
+                "difficulty": "medium",
+                "ground_truth": "The person who was cut off will likely confront the person who cut.",
+                "question": "What will the person with crossed arms probably do next?"
+            },
+            {
+                "prompt": "Three people are standing in a single-file line at a bus stop. A fourth person arrives and stands at the very front of the line.",
+                "difficulty": "hard",
+                "ground_truth": "Someone in the line will correct the person who cut, telling them to go to the back.",
+                "question": "What will the people in the line do?"
+            },
+            {
+                "prompt": "A man is in line for a ticket window. A woman steps directly in front of him. The man leans forward and gestures with his thumb toward the area behind him.",
+                "difficulty": "easy",
+                "ground_truth": "The woman will realize her mistake and move to the end of the line.",
+                "question": "How will the woman correct her position?"
+            },
+            {
+                "prompt": "A man is in line for a ticket window. A woman steps directly in front of him. The man makes eye contact with the woman.",
+                "difficulty": "medium",
+                "ground_truth": "The man will likely say something to the woman about her cutting the line.",
+                "question": "What will happen after the man makes eye contact?"
+            },
+            {
+                "prompt": "A man is standing behind another person at a ticket window. A third person walks up and stands in the space between them.",
+                "difficulty": "hard",
+                "ground_truth": "The man who was cut off will inform the person that he was next in line.",
+                "question": "How will the man who was cut off likely react?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_009",
+        "experiment_name": "Detour Reaching Task",
+        "dimension": "D2_Goal_Directed_Action",
+        "test_point": "Does the model avoid futile straight actions and choose an effective detour?",
+        "prompts": [
+            {
+                "prompt": "A girl is separated from a toy by a transparent barrier that has an opening on one side. The girl extends her hand directly toward the toy, making contact with the barrier's surface. Subsequently, she shifts her gaze to the opening on the side.",
+                "difficulty": "hard",
+                "ground_truth": "Girl will go around and retrieve the toy through the side gap.",
+                "question": "How does the girl retrieve the toy?"
+            },
+            {
+                "prompt": "A girl is separated from a toy by a transparent barrier that has an opening on one side. The girl extends her hand directly toward the toy, making contact with the barrier's surface. After her hand is stopped, she seems to notice the alternative path and shifts her gaze to the opening on the side.",
+                "difficulty": "medium",
+                "ground_truth": "Girl will go around and retrieve the toy through the side gap.",
+                "question": "How does the girl retrieve the toy?"
+            },
+            {
+                "prompt": "A girl is separated from a toy by a transparent barrier that has an opening on one side. The girl extends her hand directly toward the toy, making contact with the barrier's surface. She then shifts her gaze to the opening on the side and begins to move her hand toward that opening.",
+                "difficulty": "easy",
+                "ground_truth": "Girl will go around and retrieve the toy through the side gap.",
+                "question": "How does the girl retrieve the toy?"
+            },
+            {
+                "prompt": "A treat is on the floor behind a clear, L-shaped barrier with an opening on one side. A dog approaches the barrier on the side that directly blocks the treat and touches the surface with its nose.",
+                "difficulty": "hard",
+                "ground_truth": "Dog goes around to the open side and retrieves the treat.",
+                "question": "How does the dog retrieve the treat?"
+            },
+            {
+                "prompt": "A treat is on the floor behind a clear, L-shaped barrier with an opening on one side. A dog, intent on getting the treat, approaches the barrier on the side that directly blocks it and touches the surface with its nose.",
+                "difficulty": "medium",
+                "ground_truth": "Dog goes around to the open side and retrieves the treat.",
+                "question": "How does the dog retrieve the treat?"
+            },
+            {
+                "prompt": "A treat is on the floor behind a clear, L-shaped barrier with an opening on one side. A dog approaches the barrier on the side that directly blocks the treat, touches the surface with its nose, and then immediately glances toward the open side.",
+                "difficulty": "easy",
+                "ground_truth": "Dog goes around to the open side and retrieves the treat.",
+                "question": "How does the dog retrieve the treat?"
+            },
+            {
+                "prompt": "A ball is positioned behind a low, clear barrier that has an opening on its right side. A dog approaches the center of the barrier and makes contact with it using its nose.",
+                "difficulty": "hard",
+                "ground_truth": "Dog will go to the right gap and retrieve the ball.",
+                "question": "How does the dog retrieve the ball?"
+            },
+            {
+                "prompt": "A ball is positioned behind a low, clear barrier that has an opening on its right side. A dog approaches the center of the barrier, makes contact with it using its nose, and then pauses to assess the obstacle.",
+                "difficulty": "medium",
+                "ground_truth": "Dog will go to the right gap and retrieve the ball.",
+                "question": "How does the dog retrieve the ball?"
+            },
+            {
+                "prompt": "A ball is positioned behind a low, clear barrier that has an opening on its right side. A dog approaches the center of the barrier and makes contact with it using its nose. Immediately after, the dog turns its head and looks directly at the open gap on the right.",
+                "difficulty": "easy",
+                "ground_truth": "Dog will go to the right gap and retrieve the ball.",
+                "question": "How does the dog retrieve the ball?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_010",
+        "experiment_name": "Tool Selection (Functional vs Perceptual Similarity)",
+        "dimension": "D2_Goal_Directed_Action",
+        "test_point": "Can the model pick the functionally adequate tool rather than the most visually similar one?",
+        "prompts": [
+            {
+                "prompt": "A woman drops a toy into a tall, narrow jar. On the table next to the jar are two items: a short stick that is the same color as the toy, and a long metal rod that is long enough to reach the bottom of the jar. The woman looks down at the two items on the table.",
+                "difficulty": "hard",
+                "ground_truth": "Woman will use the long thin metal rod (functionally adequate)",
+                "question": "Does the woman use the long thin metal rod?"
+            },
+            {
+                "prompt": "A woman drops a toy into a tall, narrow jar. On the table next to the jar are two items: a short stick the same color as the toy, and a long metal rod long enough to reach the bottom. Intending to retrieve the toy, the woman looks down and assesses both items.",
+                "difficulty": "medium",
+                "ground_truth": "Woman will use the long thin metal rod (functionally adequate)",
+                "question": "Does the woman use the long thin metal rod?"
+            },
+            {
+                "prompt": "A woman drops a toy into a tall, narrow jar. On the table next to the jar are two items: a short stick the same color as the toy, and a long metal rod. The woman briefly picks up the long rod and holds it alongside the jar to check its length, then looks down at both items.",
+                "difficulty": "easy",
+                "ground_truth": "Woman will use the long thin metal rod (functionally adequate)",
+                "question": "Does the woman use the long thin metal rod?"
+            },
+            {
+                "prompt": "A boy kneels beside a couch, under which a toy car is visible but out of reach. He extends his arm toward the car but cannot reach it. He then looks over at two items on the floor: a short, colorful stick and a long broom handle.",
+                "difficulty": "hard",
+                "ground_truth": "Boy grabs the long broom handle and retrieves the toy.",
+                "question": "How does the boy retrieve the toy?"
+            },
+            {
+                "prompt": "A boy kneels beside a couch, under which a toy car is visible but out of reach. After extending his arm and finding he cannot reach the car, he thoughtfully scans the floor for a solution, his eyes settling on a short, colorful stick and a long broom handle.",
+                "difficulty": "medium",
+                "ground_truth": "Boy grabs the long broom handle and retrieves the toy.",
+                "question": "How does the boy retrieve the toy?"
+            },
+            {
+                "prompt": "A boy kneels beside a couch, under which a toy car is visible but out of reach. After failing to reach it with his arm, he looks at a short, colorful stick and a long broom handle on the floor, then gestures with his hand toward the distant car, indicating the length needed to reach it.",
+                "difficulty": "easy",
+                "ground_truth": "Boy grabs the long broom handle and retrieves the toy.",
+                "question": "How does the boy retrieve the toy?"
+            },
+            {
+                "prompt": "A marble is at the bottom of a tall, narrow tube on a table. Two tools are available nearby: a long, thin stick and a short, thick stick. A child is extending their hand towards the area where the two sticks are placed.",
+                "difficulty": "hard",
+                "ground_truth": "Child will pick the long thin stick.",
+                "question": "Does the child pick the long thin stick?"
+            },
+            {
+                "prompt": "A marble is at the bottom of a tall, narrow tube on a table. Two tools are available nearby: a long, thin stick and a short, thick stick. After looking intently at the marble inside the tube, a child extends their hand towards the area where the two sticks are placed.",
+                "difficulty": "medium",
+                "ground_truth": "Child will pick the long thin stick.",
+                "question": "Does the child pick the long thin stick?"
+            },
+            {
+                "prompt": "A marble is at the bottom of a tall, narrow tube on a table. Two tools are available nearby: a long, thin stick and a short, thick stick. A child first holds their hand up against the side of the tube to gauge its height, and then extends their hand towards the area where the two sticks are placed.",
+                "difficulty": "easy",
+                "ground_truth": "Child will pick the long thin stick.",
+                "question": "Does the child pick the long thin stick?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_011",
+        "experiment_name": "Gaze Following",
+        "dimension": "D3_Joint_Attention_and_Perspective",
+        "test_point": "Does the model shift attention to the referent of gaze, not merely the gazer?",
+        "prompts": [
+            {
+                "prompt": "A woman directs her gaze toward a red toy on the floor. A boy is beside her, looking at the woman.",
+                "difficulty": "hard",
+                "ground_truth": "Boy will look at the red toy on the floor.",
+                "question": "Does the boy look at the red toy on the floor?"
+            },
+            {
+                "prompt": "A woman directs her gaze toward a red toy on the floor. The boy beside her, who is looking at her, seems to notice her shift in attention.",
+                "difficulty": "medium",
+                "ground_truth": "Boy will look at the red toy on the floor.",
+                "question": "Does the boy look at the red toy on the floor?"
+            },
+            {
+                "prompt": "A woman looks toward a red toy on the floor and then briefly points at it. A boy beside her is looking at her.",
+                "difficulty": "easy",
+                "ground_truth": "Boy will look at the red toy on the floor.",
+                "question": "Does the boy look at the red toy on the floor?"
+            },
+            {
+                "prompt": "A woman is standing near a window, and her gaze is fixed on a dog that is outside. A nearby child is looking at the woman's face.",
+                "difficulty": "hard",
+                "ground_truth": "Child will look at the dog.",
+                "question": "Does the child look at the dog?"
+            },
+            {
+                "prompt": "A woman is standing near a window, her gaze fixed on a dog outside. A nearby child, who is looking at the woman's face, seems to notice the specific focus of her attention.",
+                "difficulty": "medium",
+                "ground_truth": "Child will look at the dog.",
+                "question": "Does the child look at the dog?"
+            },
+            {
+                "prompt": "A woman is standing near a window, her gaze fixed on a dog outside, and she raises her hand to point at it. A nearby child is looking at the woman's face.",
+                "difficulty": "easy",
+                "ground_truth": "Child will look at the dog.",
+                "question": "Does the child look at the dog?"
+            },
+            {
+                "prompt": "Next to a bright lamp, a woman turns her head and directs her gaze toward a closed drawer. A man is present and is looking at the woman.",
+                "difficulty": "hard",
+                "ground_truth": "Man will shift his gaze to the closed drawer.",
+                "question": "Does the man shift his gaze to the closed drawer?"
+            },
+            {
+                "prompt": "Next to a bright lamp, a woman turns her head and directs her gaze toward a closed drawer. A man, who has been looking at the woman, seems to register her shift in attention.",
+                "difficulty": "medium",
+                "ground_truth": "Man will shift his gaze to the closed drawer.",
+                "question": "Does the man shift his gaze to the closed drawer?"
+            },
+            {
+                "prompt": "Next to a bright lamp, a woman turns her head to look at a closed drawer and then briefly nods toward it. A man in the same shot is looking at the woman.",
+                "difficulty": "easy",
+                "ground_truth": "Man will shift his gaze to the closed drawer.",
+                "question": "Does the man shift his gaze to the closed drawer?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_012",
+        "experiment_name": "Pointing Comprehension",
+        "dimension": "D3_Joint_Attention_and_Perspective",
+        "test_point": "Will the model follow the pointer to the intended object?",
+        "prompts": [
+            {
+                "prompt": "On a table are two open boxes, one red and one blue. A woman is extending her finger to point at the blue box. A child is looking at the woman's hand.",
+                "difficulty": "hard",
+                "ground_truth": "Child will look in the blue box.",
+                "question": "Does the child look in the blue box?"
+            },
+            {
+                "prompt": "On a table are two open boxes, one red and one blue. A woman is extending her finger to point at the blue box. A child, who is looking at the woman's hand, seems to be processing the gesture.",
+                "difficulty": "medium",
+                "ground_truth": "Child will look in the blue box.",
+                "question": "Does the child look in the blue box?"
+            },
+            {
+                "prompt": "On a table are two open boxes, one red and one blue. A woman first looks directly at the blue box and then extends her finger to point at it. A child is watching the woman's hand.",
+                "difficulty": "easy",
+                "ground_truth": "Child will look in the blue box.",
+                "question": "Does the child look in the blue box?"
+            },
+            {
+                "prompt": "A child is opposite a man at a table. On the table are two bowls, one red and one blue. The red bowl contains a cookie. The man raises his arm and extends his index finger toward the blue bowl.",
+                "difficulty": "hard",
+                "ground_truth": "Follow the point to the blue bowl (man's intended object).",
+                "question": "Is the man pointing at the blue bowl?"
+            },
+            {
+                "prompt": "A child is opposite a man at a table where there is a blue bowl and a red bowl with a cookie in it. The man, seeking to direct the child's focus, extends his arm and points his finger at the blue bowl.",
+                "difficulty": "medium",
+                "ground_truth": "Follow the point to the blue bowl (man's intended object).",
+                "question": "Is the man pointing at the blue bowl?"
+            },
+            {
+                "prompt": "A child is opposite a man at a table where there is a blue bowl and a red bowl with a cookie in it. The man extends his arm, points his finger at the blue bowl, and nods to indicate.",
+                "difficulty": "easy",
+                "ground_truth": "Follow the point to the blue bowl (man's intended object).",
+                "question": "Is the man pointing at the blue bowl?"
+            },
+            {
+                "prompt": "On a table, there is a red cup and a green cup. A man points his finger at the green cup while a child across from him extends a hand toward one of the two cups.",
+                "difficulty": "hard",
+                "ground_truth": "The child will pick the green cup.",
+                "question": "Does the child pick the green cup?"
+            },
+            {
+                "prompt": "On a table, there is a red cup and a green cup. A man points his finger at the green cup. A child, who is watching the man's hand, then extends their own hand toward one of the cups.",
+                "difficulty": "medium",
+                "ground_truth": "The child will pick the green cup.",
+                "question": "Does the child pick the green cup?"
+            },
+            {
+                "prompt": "On a table, there is a red cup and a green cup. A man points his finger at the green cup and then looks directly at a child across from him. The child then extends a hand toward one of the cups.",
+                "difficulty": "easy",
+                "ground_truth": "The child will pick the green cup.",
+                "question": "Does the child pick the green cup?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_014",
+        "experiment_name": "Joint Engagement (Coordinated Attention)",
+        "dimension": "D3_Joint_Attention_and_Perspective",
+        "test_point": "Can the model generate sustained, reciprocal attentional interactions, rather than unilateral, brief glances?",
+        "prompts": [
+            {
+                "prompt": "A woman holds a colorful toy next to her face. A child is nearby.",
+                "difficulty": "hard",
+                "ground_truth": "The woman and the child will shift their gaze back and forth between the toy and each other's faces, establishing coordinated joint attention.",
+                "question": "What is the pattern of looking behavior between the woman and the child in relation to the toy and each other?"
+            },
+            {
+                "prompt": "A woman holds a colorful toy next to her face, then turns her head to gaze at the child next to her.",
+                "difficulty": "medium",
+                "ground_truth": "The woman and the child will shift their gaze back and forth between the toy and each other's faces, establishing coordinated joint attention.",
+                "question": "What is the pattern of looking behavior between the woman and the child in relation to the toy and each other?"
+            },
+            {
+                "prompt": "A woman holds a colorful toy, and her gaze moves back and forth between the child's eyes and the toy, accompanied by a smile.",
+                "difficulty": "easy",
+                "ground_truth": "The woman and the child will shift their gaze back and forth between the toy and each other's faces, establishing coordinated joint attention.",
+                "question": "What is the pattern of looking behavior between the woman and the child in relation to the toy and each other?"
+            },
+            {
+                "prompt": "A woman and a boy are sitting on the floor with a small toy between them.",
+                "difficulty": "hard",
+                "ground_truth": "The woman and the boy will maintain coordinated joint attention, repeatedly shifting their gaze between the toy and each other.",
+                "question": "How do the woman and boy coordinate their attention between the toy and each other?"
+            },
+            {
+                "prompt": "A woman and a boy are sitting on the floor, and the boy points his finger at a toy between them.",
+                "difficulty": "medium",
+                "ground_truth": "The woman and the boy will maintain coordinated joint attention, repeatedly shifting their gaze between the toy and each other.",
+                "question": "How do the woman and boy coordinate their attention between the toy and each other?"
+            },
+            {
+                "prompt": "A boy points at a toy on the floor, then looks up and gazes directly at the woman opposite him with an expectant look.",
+                "difficulty": "easy",
+                "ground_truth": "The woman and the boy will maintain coordinated joint attention, repeatedly shifting their gaze between the toy and each other.",
+                "question": "How do the woman and boy coordinate their attention between the toy and each other?"
+            },
+            {
+                "prompt": "A woman and a boy are standing face-to-face, and the woman holds a toy car between them.",
+                "difficulty": "hard",
+                "ground_truth": "The woman and the boy will engage in reciprocal, back-and-forth gazes and interactions between the toy and each other's faces.",
+                "question": "How do the woman and the boy interact with each other in relation to the toy?"
+            },
+            {
+                "prompt": "A woman holds a toy car and gently shakes it back and forth.",
+                "difficulty": "medium",
+                "ground_truth": "The woman and the boy will engage in reciprocal, back-and-forth gazes and interactions between the toy and each other's faces.",
+                "question": "How do the woman and the boy interact with each other in relation to the toy?"
+            },
+            {
+                "prompt": "A woman holds a toy car; she first gazes at the toy, then slowly shifts her gaze to the boy and smiles at him.",
+                "difficulty": "easy",
+                "ground_truth": "The woman and the boy will engage in reciprocal, back-and-forth gazes and interactions between the toy and each other's faces.",
+                "question": "How do the woman and the boy interact with each other in relation to the toy?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_016",
+        "experiment_name": "Turn-Taking",
+        "dimension": "D4_Social_Coordination",
+        "test_point": "Does the model enforce alternation rather than overlap or silence?",
+        "prompts": [
+            {
+                "prompt": "Two children are sitting on the floor to play ball game. A ball is rolled by one child in the direction of the other.",
+                "difficulty": "hard",
+                "ground_truth": "The two children take turns rolling the ball to each other."
+            },
+            {
+                "prompt": "Two children are sitting on the floor to play ball game. One child rolls a ball toward the other, who watches the ball approach as if ready to receive it.",
+                "difficulty": "medium",
+                "ground_truth": "The two children take turns rolling the ball to each other."
+            },
+            {
+                "prompt": "Two children are sitting on the floor to play ball game. One child makes eye contact with the other and then rolls a ball toward the other child.",
+                "difficulty": "easy",
+                "ground_truth": "The two children take turns rolling the ball to each other."
+            },
+            {
+                "prompt": "A man and a woman are seated opposite one another at a table. The woman speaks a short sentence, pauses, and then turns her head to look directly at the man.",
+                "difficulty": "hard",
+                "ground_truth": "Man speaks next.",
+                "question": "Does the man speak next?"
+            },
+            {
+                "prompt": "A man and a woman are seated opposite one another at a table. After speaking a short sentence, the woman pauses and turns her head to look directly at the man, and nods to indicate.",
+                "difficulty": "medium",
+                "ground_truth": "Man speaks next.",
+                "question": "Does the man speak next?"
+            },
+            {
+                "prompt": "A man and a woman are seated opposite one another at a table. The woman speaks a short sentence, pauses, and then turns her head to look directly at the man while making a small, open-handed gesture toward him.",
+                "difficulty": "easy",
+                "ground_truth": "Man speaks next.",
+                "question": "Does the man speak next?"
+            },
+            {
+                "prompt": "A girl places a small toy into a boy's hand. The boy then extends his own hand, which is holding the toy, toward the girl.",
+                "difficulty": "hard",
+                "ground_truth": "Girl will take the toy."
+            },
+            {
+                "prompt": "A girl hands a small toy to a boy. After taking the toy, the boy looks at the girl and extends his hand holding the toy back toward her.",
+                "difficulty": "medium",
+                "ground_truth": "Girl will take the toy."
+            },
+            {
+                "prompt": "A girl hands a small toy to a boy. The boy extends his hand, holding the toy out toward the girl, and makes an open-handed gesture toward the toy with his free hand.",
+                "difficulty": "easy",
+                "ground_truth": "Girl will take the toy."
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_018",
+        "experiment_name": "Leader-Follower Coordination",
+        "dimension": "D4_Social Coordination",
+        "test_point": "Can the model generate coherent leader prompts and produce corresponding follower responses?",
+        "prompts": [
+            {
+                "prompt": "On the floor of a room, there is a red ring and a blue ring. A boy is standing in front of the two rings, about to choose one to approach. At this moment, a nearby woman raises her hand and points to the red ring.",
+                "difficulty": "hard",
+                "ground_truth": "The boy will walk towards the red ring based on the woman's cue.",
+                "question": "Does the boy walk towards the red ring based on the woman's cue?"
+            },
+            {
+                "prompt": "On the floor of a room, there are red and blue rings. A boy is standing before them, appearing to hesitate about which one to choose. At this moment, a nearby woman first looks at the boy, then clearly points her finger at the red ring on the floor.",
+                "difficulty": "medium",
+                "ground_truth": "The boy will walk towards the red ring based on the woman's cue.",
+                "question": "Does the boy walk towards the red ring based on the woman's cue?"
+            },
+            {
+                "prompt": "On the floor of a room, there are red and blue rings. A boy is standing before them, his body slightly leaning towards the blue ring. At this moment, a nearby woman makes eye contact with the boy, then points her finger at the red ring, and makes a clear beckoning gesture towards the direction of the red ring.",
+                "difficulty": "easy",
+                "ground_truth": "The boy will walk towards the red ring based on the woman's cue.",
+                "question": "Does the boy walk towards the red ring based on the woman's cue?"
+            },
+            {
+                "prompt": "In a room, there is a woman, a man, and a child. The woman walks directly towards the door, stops there, and glances back at the man.",
+                "difficulty": "hard",
+                "ground_truth": "The man will follow the woman towards the door, and the child will follow them.",
+                "question": "What do the man and the child do as the woman walks to the door?"
+            },
+            {
+                "prompt": "In a room, there is a woman, a man, and a child. The woman walks towards the door, then turns around and makes a beckoning gesture for the man to follow.",
+                "difficulty": "medium",
+                "ground_truth": "The man will follow the woman towards the door, and the child will follow them.",
+                "question": "What do the man and the child do as the woman walks to the door?"
+            },
+            {
+                "prompt": "In a room, there is a woman, a man, and a child. The woman walks to the door, pushes it open, and then looks back at the man. She first gives a nod, then extends her open palm and makes a gentle guiding push gesture towards the outside.",
+                "difficulty": "easy",
+                "ground_truth": "The man will follow the woman towards the door, and the child will follow them.",
+                "question": "What do the man and the child do as the woman walks to the door?"
+            },
+            {
+                "prompt": "In a hallway, a man is standing a few steps behind a woman. As the woman walks ahead, she raises her arm and points to a door in front of them.",
+                "difficulty": "hard",
+                "ground_truth": "The man will follow the woman's lead and walk towards the door.",
+                "question": "Does the man follow the woman's lead towards the door?"
+            },
+            {
+                "prompt": "In a hallway, a man is standing a few steps behind a woman. As the woman walks ahead, she points to a door in front of them, takes a step in that direction, and then glances back at the man.",
+                "difficulty": "medium",
+                "ground_truth": "The man will follow the woman's lead and walk towards the door.",
+                "question": "Does the man follow the woman's lead towards the door?"
+            },
+            {
+                "prompt": "In a hallway, a man is standing a few steps behind a woman. The woman stops, turns around completely to face the man, and makes eye contact with him. She then extends her full arm, pointing decisively at the door ahead. Next, she turns again, takes a few steps towards the door, and looks back at the man once more.",
+                "difficulty": "easy",
+                "ground_truth": "The man will follow the woman's lead and walk towards the door.",
+                "question": "Does the man follow the woman's lead towards the door?"
+            }
+        ]
+    },
+    {
+        "experiment_id": "EXP_019",
+        "experiment_name": "Emotion Contagion",
+        "dimension": "D5_Emotion_and_Prosocial_Behavior",
+        "test_point": "Will the model propagate affect across individuals without explicit instruction?",
+        "prompts": [
+            {
+                "prompt": "A woman is seated on a couch, holding a phone to her ear. She giggles and brings a hand to her mouth. A man in the same room turns his head to look in her direction.",
+                "difficulty": "hard",
+                "ground_truth": "Man smiles",
+                "question": "What is the reaction of the man in the scene?"
+            },
+            {
+                "prompt": "A woman is on a couch holding a phone to her ear when she suddenly giggles, covering her mouth. A man nearby, his attention caught by the unexpected sound, turns his head to look at her.",
+                "difficulty": "medium",
+                "ground_truth": "Man smiles",
+                "question": "What is the reaction of the man in the scene?"
+            },
+            {
+                "prompt": "A woman sits on a couch with a phone to her ear and suddenly lets out a loud giggle, covering her mouth. A man sitting nearby, who had been reading a newspaper, lowers it and turns his head to look at her.",
+                "difficulty": "easy",
+                "ground_truth": "Man smiles",
+                "question": "What is the reaction of the man in the scene?"
+            },
+            {
+                "prompt": "A man and a woman are positioned next to each other. The woman emits a loud laugh, and the man turns his head in her direction.",
+                "difficulty": "hard",
+                "ground_truth": "The man and boy adopt happy expressions (smile/laugh).",
+                "question": "Do the man and the boy adopt happy expressions, such as smiling or laughing?"
+            },
+            {
+                "prompt": "A man and a woman are positioned next to each other. The woman emits a loud laugh, and the man, his attention drawn by the sound, turns his head in her direction.",
+                "difficulty": "medium",
+                "ground_truth": "The man and boy adopt happy expressions (smile/laugh).",
+                "question": "Do the man and the boy adopt happy expressions, such as smiling or laughing?"
+            },
+            {
+                "prompt": "A man and a woman are positioned next to each other. The woman emits a loud laugh and playfully taps the man on the shoulder. The man turns his head in her direction.",
+                "difficulty": "easy",
+                "ground_truth": "The man and boy adopt happy expressions (smile/laugh).",
+                "question": "Do the man and the boy adopt happy expressions, such as smiling or laughing?"
+            },
+            {
+                "prompt": "A woman in a cafe laughs out loud. At an adjacent table, a man turns his head and looks in the woman's direction.",
+                "difficulty": "hard",
+                "ground_truth": "The woman's laughter spreads—man smiles",
+                "question": "How does the man react to the woman's laughter?"
+            },
+            {
+                "prompt": "A woman in a cafe laughs out loud. The sound seems to catch the interest of a man at an adjacent table, who then turns his head and looks in her direction.",
+                "difficulty": "medium",
+                "ground_truth": "The woman's laughter spreads—man smiles",
+                "question": "How does the man react to the woman's laughter?"
+            },
+            {
+                "prompt": "A woman in a cafe laughs out loud, and her companion at the same table chuckles in response. A man at an adjacent table turns his head and looks toward their table.",
+                "difficulty": "easy",
+                "ground_truth": "The woman's laughter spreads—man smiles",
+                "question": "How does the man react to the woman's laughter?"
+            }
+        ]
+    }
+]
