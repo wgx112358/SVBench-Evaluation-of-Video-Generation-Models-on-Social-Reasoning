@@ -30,16 +30,16 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td align="center"><b>Experiment 14 (Hard)</b></td>
   </tr>
   <tr>
-    <td><video src="asset/video/EXP_012-3-easy.mp4" width="100%" controls autoplay loop muted></video></td>
-    <td><video src="asset/video/EXP_014-7-hard.mp4" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/1c35250f-b965-4839-95b5-854ba53f9b23" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/4231dac5-625c-41ae-83de-f68ba7e57eec" width="100%" controls autoplay loop muted></video></td>
   </tr>
   <tr>
     <td align="center"><b>Experiment 18 (Medium)</b></td>
     <td align="center"><b>Experiment 19 (Medium)</b></td>
   </tr>
   <tr>
-    <td><video src="asset/video/EXP_018-2-medium.mp4" width="100%" controls autoplay loop muted></video></td>
-    <td><video src="asset/video/EXP_019-5-medium.mp4" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/efde93d8-9e21-49bd-925f-372f08a5cce8" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/d5e3e067-6a85-487f-829d-e0a4b67e9b79" width="100%" controls autoplay loop muted></video></td>
   </tr>
 </table>
 
