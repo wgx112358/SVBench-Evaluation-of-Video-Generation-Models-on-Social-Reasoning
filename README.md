@@ -30,8 +30,8 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td align="center" width="50%"><b>Experiment 14 (Hard)</b></td>
   </tr>
   <tr>
-    <td><video src="asset/video/EXP_012-3-easy.mp4" width="100%" controls autoplay loop muted></video></td>
-    <td><video src="asset/video/EXP_014-7-hard.mp4" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="asset/video/EXP_012-3-easy.mp4" width="600" controls autoplay loop muted></video></td>
+    <td><video src="asset/video/EXP_014-7-hard.mp4" width="600" controls autoplay loop muted></video></td>
   </tr>
   <tr>
     <td align="left"><b>Prompt:</b> A child is opposite a woman at a table. On the table are two bowls, one red and one blue. The red bowl contains a cookie. The woman raises her arm and extends her index finger toward the blue bowl.</td>
@@ -42,8 +42,8 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td align="center"><b>Experiment 19 (Medium)</b></td>
   </tr>
   <tr>
-    <td><video src="asset/video/EXP_018-2-medium.mp4" width="100%" controls autoplay loop muted></video></td>
-    <td><video src="asset/video/EXP_019-5-medium.mp4" width="100%" controls autoplay loop muted></video></td>
+    <td><video src="asset/video/EXP_018-2-medium.mp4" width="600" controls autoplay loop muted></video></td>
+    <td><video src="asset/video/EXP_019-5-medium.mp4" width="600" controls autoplay loop muted></video></td>
   </tr>
   <tr>
     <td align="left"><b>Prompt:</b> On the floor of a room, there are red and blue rings. A boy is standing before them, appearing to hesitate about which one to choose. At this moment, a nearby woman first looks at the boy, then clearly points her finger at the red ring on the floor.</td>
