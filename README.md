@@ -24,14 +24,9 @@ Our benchmark reveals substantial performance gaps in current video generation s
 
 
 ## Demos
-<div align="center">
+<div style="display: flex; justify-content: center;">
 <table align="center">
   <!-- Row 1 -->
-  <tr>
-    <td align="center" width="280"><b>Experiment 10 (Easy)</b></td>
-    <td align="center" width="280"><b>Experiment 11 (Hard)</b></td>
-    <td align="center" width="280"><b>Experiment 12 (Hard)</b></td>
-  </tr>
   <tr>
     <td><video src="asset/video/EXP_010-9-easy.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_011-1-hard.mp4" width="280" controls autoplay loop muted></video></td>
@@ -44,11 +39,6 @@ Our benchmark reveals substantial performance gaps in current video generation s
   </tr>
   <!-- Row 2 -->
   <tr>
-    <td align="center" width="280"><b>Experiment 14-1 (Hard)</b></td>
-    <td align="center" width="280"><b>Experiment 14-4 (Hard)</b></td>
-    <td align="center" width="280"><b>Experiment 14-7 (Hard)</b></td>
-  </tr>
-  <tr>
     <td><video src="asset/video/EXP_014-1-hard.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_014-4-hard.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_014-7-hard.mp4" width="280" controls autoplay loop muted></video></td>
@@ -59,11 +49,6 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td align="left"><b>Prompt:</b> A woman and a boy are standing face-to-face, and the woman holds a toy car between them.<br><b>Ground Truth:</b> The woman and the boy will engage in reciprocal, back-and-forth gazes and interactions between the toy and each other's faces.<br><b>Question:</b> How do the woman and the boy interact with each other in relation to the toy?</td>
   </tr>
   <!-- Row 3 -->
-  <tr>
-    <td align="center" width="280"><b>Experiment 16 (Hard)</b></td>
-    <td align="center" width="280"><b>Experiment 18 (Medium)</b></td>
-    <td align="center" width="280"><b>Experiment 19 (Medium)</b></td>
-  </tr>
   <tr>
     <td><video src="asset/video/EXP_016-4-hard.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_018-2-medium.mp4" width="280" controls autoplay loop muted></video></td>
@@ -76,11 +61,6 @@ Our benchmark reveals substantial performance gaps in current video generation s
   </tr>
   <!-- Row 4 -->
   <tr>
-    <td align="center" width="280"><b>Experiment 20 (Medium)</b></td>
-    <td align="center" width="280"><b>Experiment 21 (Hard)</b></td>
-    <td align="center" width="280"><b>Experiment 22 (Easy)</b></td>
-  </tr>
-  <tr>
     <td><video src="asset/video/EXP_020-2-medium.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_021-3-hard.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_022-1-easy.mp4" width="280" controls autoplay loop muted></video></td>
@@ -91,11 +71,6 @@ Our benchmark reveals substantial performance gaps in current video generation s
     <td align="left"><b>Prompt:</b> At the edge of a mud puddle, so expansive that one must step into it to retrieve anything from the middle, a child is unable to retrieve his toy. The boy is wearing clean cloth shoes, but the man is wearing clean but waterproof shoes. The boy looks at a man in clean shoes, also standing at the edge, and points at the toy.<br><b>Ground Truth:</b> The man will step into the mud to retrieve the toy, getting his shoes dirty.<br><b>Question:</b> What will the man do about the toy?</td>
   </tr>
   <!-- Row 5 -->
-  <tr>
-    <td align="center" width="280"><b>Experiment 23 (Medium)</b></td>
-    <td align="center" width="280"><b>Experiment 24 (Medium)</b></td>
-    <td align="center" width="280"><b>Experiment 28 (Medium)</b></td>
-  </tr>
   <tr>
     <td><video src="asset/video/EXP_023-2-medium.mp4" width="280" controls autoplay loop muted></video></td>
     <td><video src="asset/video/EXP_024-2-medium.mp4" width="280" controls autoplay loop muted></video></td>
