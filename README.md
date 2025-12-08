@@ -144,12 +144,37 @@ This discrete evaluation approach enhances robustness by framing assessment as u
 
 ### Benchmark Results
 
-Our extensive evaluation across seven state-of-the-art video generation systems reveals:
+Our extensive evaluation across eight state-of-the-art video generation systems reveals:
 
 - **Top performers** (Sora2-Pro: 79.6%, Veo-3.1: 72.4%) show strong implicit priors for human motion causality and intention-driven interactions
-- **Mid-tier models** (Hailuo02-S: 56.4%, Kling2.5-Turbo: 52.2%) struggle with coordinated multi-agent behavior and abstract social inference
+- **Mid-tier models** (Hailuo02-S: 56.4%, Kling2.5-Turbo: 52.2%, Wan2.2: 48.3%) struggle with coordinated multi-agent behavior and abstract social inference
 - **Open-source models** (HunyuanVideo: 30.8%, LongCat-Video: 39.2%, LTX-1.0: 27.6%) operate at substantially lower performance levels
 - **Critical gap**: Models excel at physical reasoning but lack explicit mechanisms for social reasoning
+
+<div align="center">
+
+**Experimental Results of Selected 15 Tasks Across 8 Models (Performance in %)**
+
+| Task Dimension | Sub-Task | Hailuo02-S | Kling2.5-turbo | Sora2pro | Veo-3.1 | HunyuanVideo | Longcat-Video | LTX-1.0 | Wan2.2 |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Goal Directed Action | Detour Reaching | 51.4 | 48.6 | **68.6** | 62.9 | 31.4 | 28.6 | 17.1 | 42.2 |
+| | Tool Selection | 55.0 | 45.0 | **85.0** | **85.0** | 17.5 | 28.6 | 30.0 | 57.8 |
+| Joint Attention & Perspective | Gaze Following | 44.4 | 33.3 | 62.2 | **68.9** | 35.6 | 44.4 | 28.9 | 28.9 |
+| | Pointing Comprehension | 75.0 | 67.5 | **87.5** | 82.5 | 30.0 | 57.1 | 22.9 | 71.1 |
+| | Joint Engagement | 45.0 | 45.0 | 82.5 | 82.5 | 50.0 | 31.4 | 30.0 | 44.4 |
+| Social Coordination | Turn Taking | 45.7 | 62.9 | **94.3** | 85.7 | 37.1 | 57.1 | 40.0 | 62.2 |
+| | Leader Follower Coord | 40.0 | 44.4 | **77.8** | 64.4 | 17.8 | 35.6 | 17.8 | 48.9 |
+| Emotion & Prosocial Behavior | Emotion Contagion | 66.7 | 75.6 | 82.2 | **88.9** | 46.7 | 65.0 | 57.8 | **88.9** |
+| | Instrumental Helping | **68.9** | 55.6 | 62.2 | 48.9 | 31.1 | 33.3 | 24.4 | 35.6 |
+| | Empathic Concern | 80.0 | 76.0 | **100.0** | **100.0** | 24.0 | 60.0 | 20.0 | 66.7 |
+| | Costly Helping | 57.5 | 37.5 | **95.0** | 75.0 | 22.5 | 31.4 | 15.0 | 37.8 |
+| Social Norms & Spacing | Proxemics Personal Space | 47.5 | 47.5 | **65.0** | 45.0 | 25.0 | 25.0 | 35.0 | 22.2 |
+| | Queue Behavior | 55.6 | 40.0 | **82.5** | 75.6 | 33.3 | 20.0 | 20.0 | 20.0 |
+| | Dominance Display | 80.0 | 75.0 | 75.0 | **82.5** | 35.0 | 30.0 | 37.5 | 64.4 |
+| Multi-Agent Social Strategy | Helping Based on Visual Perspective | 42.2 | 42.2 | **84.4** | 53.3 | 24.4 | 40.0 | 17.8 | 33.3 |
+| **Overall** | **-** | **56.4** | **52.2** | **79.6** | **72.4** | **30.8** | **39.2** | **27.6** | **48.3** |
+
+</div>
 
 These findings highlight the fundamental distinction between perceptual realism and socially coherent behavior, revealing where current generation systems succeed or fundamentally fail in generating socially intelligent video content.
 
